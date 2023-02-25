@@ -1,5 +1,5 @@
 <?php
-    include "function.php";
+    include("function.php");
 ?>
 
 <?php for($i = 0; $i < 2; $i++): ?>

@@ -39,4 +39,19 @@
     }   
 
     echo lcfirst($words);
+
+    echo "\n" . substr($words, 19,10); //string, indice inicial da substring, comprimento
+    echo "\n" . strrev("palavra");
+    echo str_repeat( "\n" . "repete ai", 3);
+
+    $array_string = explode(" ", "A B C D E F");
+    foreach ($array_string as $char) {
+        echo "\n\n" . $char;
+    }
+
+    $string_array = implode(",", $array_string);
+    echo "\n\n" . $string_array;
+
+    $array_url = parse_url("https://www.google.com/?busca=1");
+    print_r($array_url);
 ?>

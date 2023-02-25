@@ -1,6 +1,6 @@
 <?php
-    include "test.php";
-    require "test2.php";
+    include ("test.php");
+    require ("test2.php");
 ?>
 
 <p>Após o cabeçalho</p>
@@ -10,6 +10,6 @@
 <input type="text" value="<?= $c ?>">
 
 <?php
-    include_once "file/test3.php";
-    include_once "file/test3.php"; //já foi incluido
+    include_once ("file/test3.php");
+    include_once ("file/test3.php"); //já foi incluido
 ?>
