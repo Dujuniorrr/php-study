@@ -13,15 +13,15 @@
                     <input type="hidden" name="id" value="<?= $contact['id']?>">
                     <div class="form-group mb-3">
                         <label for="name">Nome do contato</label>
-                        <input type="text" class="form-control" value="<?=  $contact['name'] ?>" id="name" name="name" placeholder="Digite o nome do contato.">
+                        <input type="text" class="form-control" value="<?=  $contact['name'] ?>" id="name" name="name" required placeholder="Digite o nome do contato.">
                     </div>
                     <div class="form-group mb-3">
                         <label for="phone">Telefone do contato</label>
-                        <input type="phone" class="form-control"  value="<?=  $contact['phone'] ?>" id="phone" name="phone" placeholder="Digite o telefone do contato">
+                        <input type="phone" class="form-control"  value="<?=  $contact['phone'] ?>" id="phone" name="phone" required placeholder="Digite o telefone do contato">
                     </div>
                     <div class="form-group mb-3">
                         <label for="observation">Observação sobre o contato</label>
-                        <textarea name="observation" class="form-control" id="observation" maxlength="250"> <?=  $contact['observation'] ?> </textarea>
+                        <textarea name="observation" required class="form-control" id="observation" maxlength="250"> <?=  $contact['observation'] ?> </textarea>
                     </div>
                     <button type="submit" class="btn btn-primary mb-3">Editar</button>
                 </form>

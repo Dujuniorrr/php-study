@@ -12,15 +12,15 @@
                     <input type="hidden" name="type" value="create">
                     <div class="form-group mb-3">
                         <label for="name">Nome do contato</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Digite o nome do contato.">
+                        <input type="text" required class="form-control" id="name" name="name" placeholder="Digite o nome do contato.">
                     </div>
                     <div class="form-group mb-3">
                         <label for="phone">Telefone do contato</label>
-                        <input type="phone" class="form-control" id="phone" name="phone" placeholder="Digite o telefone do contato">
+                        <input type="phone" required class="form-control" id="phone" name="phone" placeholder="Digite o telefone do contato">
                     </div>
                     <div class="form-group mb-3">
                         <label for="observation">Observação sobre o contato</label>
-                        <textarea name="observation" class="form-control" id="observation" maxlength="250"></textarea>
+                        <textarea name="observation" required class="form-control" id="observation" maxlength="250"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary mb-3">Adicionar</button>
                 </form>

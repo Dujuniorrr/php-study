@@ -1,0 +1,18 @@
+DROP DATABASE IF EXISTS "DAO_TESTE";
+
+CREATE DATABASE "DAO_TESTE"
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'pt_BR.UTF-8'
+    LC_CTYPE = 'pt_BR.UTF-8'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+	
+CREATE TABLE CAR(
+	id SERIAL PRIMARY KEY,
+	brand VARCHAR(100),
+	mileage INT,
+	color VARCHAR(50)
+);
